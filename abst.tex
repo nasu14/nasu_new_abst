@@ -1,6 +1,7 @@
 \documentclass[10pt,a4j,twocolumn]{jsarticle}
 
 \usepackage[dvipdfmx]{graphicx}
+\usepackage{url}
 
 \setlength{\textheight}{275mm}
 \headheight 5mm
@@ -42,33 +43,32 @@ hikiには下記の特徴がある．
 ところが，画像の管理や，拡大，印刷した時のクオリティーの低さが問題である．
 一方，MathMLはコンピュータによる数式の意味認識において有利となるよう設計されたものであり，
 人間がMathMLを直接書いたり編集したりすることは意図していない．
-したがって，人間が書きやすいlatexから自動変換が提供されている．
+したがって，人間が書きやすい\LaTeX から自動変換が提供されている．
 hikiでは，Ruby 用ライブラリであるmathml.rbを利用している\cite{hiraku}．
 しかし，MathMLが標準で提供されるブラウザーはFirefoxに限られており，一般ユーザがIEで利用するには特殊なadd onをinstallする必要がある．
 
-近年開発が始まった，MathJaxはこのような欠点を克服して，
+近年開発が始まったMathJax\cite{mathjax}はこのような欠点を克服して，
 \begin{enumerate}
-\item MathJaxはLaTeXの数学環境コマンドを再現できる．
-\item MathML未対応のブラウザでも表示できるようにすることができ，ユーザが事前準備をしなくても良い．
+\item \LaTeX の数式コマンドを入力として受け取る
+\item MathML未対応のブラウザでも表示でき，ユーザが事前準備をしなくても良い．
 \item 画像化しないので拡大したり，高解像度で印刷しても鮮明である．
-\item MathJaxをウェブページコンテンツと一緒にダウンロードし，ページ中の数式マークアップを走査し，数式を組版することができる．
+\item MathJaxをウェブページコンテンツと一緒にダウンロードし，ページ中の数式マークアップを走査し，数式を組版することができる.
 \end{enumerate}
 以上の特徴より，本研究ではMathJaxを用いることが適当と考えた．
 
 \section{hiki上でのMathJaxの導入手順}
 \subsection{hikiとMathJaxを連携させ，hikiで入力した内容をMathJax化させる}
-hikiでのmathjax表示は次のようにして実現できる．
+hikiでのMathJax表示は次のようにして実現できる．
 \begin{itemize}
 \item JavaScriptをdirectory内に用意
 \item hikiのlayoutのひな形template/layout.htmlの一部を変更
 \end{itemize}
-次の通り，latex形式で書き込んだhiki文書が
+次の通り，\LaTeX 形式で書き込んだhiki文書が
 \begin{quote}\begin{verbatim}
 $f_x$
 $$f(\rho) =\sqrt{\rho}=\sqrt {\sum_j h^2 }$$
 \end{verbatim}\end{quote}
 hikiのシステムによってweb上では次のように表示される．
-
 
 \begin{figure}[h]
   \centering
@@ -77,11 +77,12 @@ hikiのシステムによってweb上では次のように表示される．
 \end{figure}
 
 \subsection{今後の課題}
-hikiではプラグインで提供されるのが標準である．
+hikiでは拡張機能はプラグインで提供されるのが標準である．
 したがって，前述のような手作業による改変は標準的なinstallとして望ましくない．
 そこで前述の作業を自動化するpluginを実装する．
 
-\begin{bibliography}{9}
-\bibitem{hiraku} ひらく工房(http://www.hiraku.ro/?mathml.rb)|, 黒田 ひらく, 2016/8/31アクセス．
-\end{bibliography}
+\begin{thebibliography}{9}
+\bibitem{hiraku} ひらく工房, 黒田 ひらく, \url{http://www.hiraku.ro/?mathml.rb}, 2016/8/31アクセス．
+\bibitem{mathjax} MathJax, \url{https://www.mathjax.org}, 2016/9/5アクセス．
+\end{thebibliography}
 \end{document}

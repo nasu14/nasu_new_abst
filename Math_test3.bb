@@ -1,5 +1,5 @@
-%%Title: ./Math_test3.png
-%%Creator: extractbb 20110311
+%%Title: Math_test3.png
+%%Creator: extractbb 20150315
 %%BoundingBox: 0 0 183 142
-%%CreationDate: Fri Sep  2 14:01:56 2016
+%%CreationDate: Mon Sep  5 15:51:46 2016
 
