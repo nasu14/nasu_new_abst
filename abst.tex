@@ -43,7 +43,7 @@ hikiには下記の特徴がある．
 一方，MathMLはコンピュータによる数式の意味認識において有利となるよう設計されたものであり，
 人間がMathMLを直接書いたり編集したりすることは意図していない．
 したがって，人間が書きやすいlatexから自動変換が提供されている．
-hikiでは，Ruby 用ライブラリであるmathml.rbを利用している\cite{1}．
+hikiでは，Ruby 用ライブラリであるmathml.rbを利用している\cite{hiraku}．
 しかし，MathMLが標準で提供されるブラウザーはFirefoxに限られており，一般ユーザがIEで利用するには特殊なadd onをinstallする必要がある．
 
 近年開発が始まった，MathJaxはこのような欠点を克服して，
@@ -64,8 +64,9 @@ hikiでのmathjax表示は次のようにして実現できる．
 \end{itemize}
 次の通り，latex形式で書き込んだhiki文書が
 \begin{quote}\begin{verbatim}
-$f_x$
-$$f(\rho) =\sqrt{\rho}=\sqrt {\sum_j h^2 }$$
+$E_i = \sum _ j\phi \left( r_j \right) + f(\rho)$
+$$f(\rho) =\sqrt{\rho}=\sqrt {\sum_j h^2 
+\left( r_j \right) }$$
 \end{verbatim}\end{quote}
 hikiのシステムによってweb上では次のように表示される．
 
@@ -81,7 +82,7 @@ hikiではプラグインで提供されるのが標準である．
 したがって，前述のような手作業による改変は標準的なinstallとして望ましくない．
 そこで前述の作業を自動化するpluginを実装する．
 
-\section{参照文献}\begin{enumerate}
-\item\verb|mathml, ひらく工房(http://www.hiraku.ro/?mathml.rb)|, 黒田 ひらく, 2016/8/31アクセス．
-\end{enumerate}
+\section{参照文献}\begin{thebibliography}{9}
+\bibitem{hiraku}mathml,ひらく工房(http://www.hiraku.ro/?mathml.rb)|,黒田 ひらく, 2016/8/31アクセス．
+\end{thebibliography}
 \end{document}
