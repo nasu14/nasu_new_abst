@@ -1,7 +1,7 @@
-This is pTeXk, Version 3.141592-p3.1.11 (utf8.euc) (Web2C 7.5.4) (format=platex 2011.7.24)  8 SEP 2016 13:44
+This is pTeXk, Version 3.141592-p3.1.11 (utf8.euc) (Web2C 7.5.4) (format=platex 2011.7.24)  8 SEP 2016 14:06
  file:line:error style messages enabled.
-**abst
-(./abst.tex
+**nasu_abst
+(./nasu_abst.tex
 pLaTeX2e <2006/11/10>+0 (based on LaTeX2e <2003/12/01> patch level 0)
 (/Applications/UpTeX.app/teTeX/share/texmf/ptex/platex/jsclasses/jsarticle.cls
 Document Class: jsarticle 2009/02/22 okumura
@@ -62,8 +62,8 @@ File: dvipdfmx.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
 \Gin@req@height=\dimen121
 \Gin@req@width=\dimen122
-) (./abst.aux)
-\openout1 = `abst.aux'.
+) (./nasu_abst.aux)
+\openout1 = `nasu_abst.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
@@ -137,14 +137,14 @@ Overfull \hbox (19.59767pt too wide) in paragraph at lines 87--88
 [1
 
 
-] (./abst.aux) ) 
+] (./nasu_abst.aux) ) 
 Here is how much of TeX's memory you used:
  731 strings out of 94681
- 8704 string characters out of 1174371
+ 8749 string characters out of 1174371
  62436 words of memory out of 1500000
  4060 multiletter control sequences out of 10000+50000
  13684 words of font info for 60 fonts, out of 1200000 for 2000
  571 hyphenation exceptions out of 8191
- 25i,7n,21p,177b,419s stack positions out of 5000i,500n,6000p,200000b,5000s
+ 25i,7n,21p,182b,419s stack positions out of 5000i,500n,6000p,200000b,5000s
 
-Output written on abst.dvi (1 page, 6816 bytes).
+Output written on nasu_abst.dvi (1 page, 6816 bytes).
